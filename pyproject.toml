@@ -1,0 +1,10 @@
+[project]
+name = "xrd-visualisation"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.3",
+    "pymatgen>=2025.5.28",
+    "scikit-learn>=1.6.1",
+]
