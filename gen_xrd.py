@@ -44,9 +44,8 @@ def cif2xrd(args):
         origin_df = pd.read_csv(os.path.join(data_dir, file))
         cifs = origin_df['cif'].values
         xrd_array_list=[]
+        lattice_type_list=[]
         for cif in tqdm(cifs, desc=f'Generating XRDs for file {file}'):
-            # Create the structure
-
             parser = CifParser.from_str(cif)
             structure = parser.parse_structures(primitive=True)[0]
 
@@ -54,6 +53,10 @@ def cif2xrd(args):
             # that peaks are labelled with the conventional Miller indices
             sga = SpacegroupAnalyzer(structure)
             structure = sga.get_conventional_standard_structure()
+
+
+            # 获取晶格类型
+            lattice_type = sga.get_lattice_type()  # 晶格类型
 
             # wavelength
             curr_wavelength = WAVELENGTHS[args.wave_source]
@@ -64,7 +67,9 @@ def cif2xrd(args):
             # Create the XRD tensor
             xrd_array = create_xrd_array(args, pattern)
             xrd_array_list.append(xrd_array)
+            lattice_type_list.append(lattice_type)
         origin_df['xrd'] = xrd_array_list
+        origin_df['lattice_type']=lattice_type_list
         xrd_data = np.vstack(origin_df['xrd'].values)
         tsne = TSNE(n_components=2, random_state=0)
         xrd_tsne = tsne.fit_transform(xrd_data)
@@ -76,11 +81,11 @@ def cif2xrd(args):
         plt.xlabel('Q-t-SNE Component 1')
         plt.ylabel('Q-t-SNE Component 2')
         plt.grid(True)
-        plt.show()
+
         output_path = str(file)+'tsne_visualization.png'  # 你可以根据需要修改路径和文件名
         plt.savefig(output_path, dpi=300, bbox_inches='tight')
         origin_df.to_csv(str(file)+'_Q_tsne_visualization.csv')
-
+        plt.show()
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate XRD patterns from CIF descriptions')
     parser.add_argument(
