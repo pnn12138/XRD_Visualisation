@@ -20,6 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/pnn12138/XRD_Visualisation.git",
+    "accountId": "ecfed213-f087-4d05-b643-6a51804fb896"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -45,6 +51,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,7 +115,7 @@
       <workItem from="1748933512549" duration="3275000" />
       <workItem from="1748936916598" duration="459000" />
       <workItem from="1748937546944" duration="1225000" />
-      <workItem from="1748938800676" duration="13910000" />
+      <workItem from="1748938800676" duration="14316000" />
     </task>
     <task id="LOCAL-00001" summary="完成raw_XRD的t-sne绘制">
       <option name="closed" value="true" />
@@ -126,11 +133,30 @@
       <option name="project" value="LOCAL" />
       <updated>1749017296968</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成raw_XRD的t-sne绘制">
+      <option name="closed" value="true" />
+      <created>1749017425146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749017425146</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成raw_XRD的t-sne绘制" />
