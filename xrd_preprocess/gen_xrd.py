@@ -84,7 +84,8 @@ def cif2xrd(args):
 
         output_path = str(file)+'tsne_visualization.png'  # 你可以根据需要修改路径和文件名
         plt.savefig(output_path, dpi=300, bbox_inches='tight')
-        origin_df.to_csv(str(file)+'_Q_tsne_visualization.csv')
+        origin_df.to_pickle(str(file)+'_Q_tsne_visualization.csv')
+
         plt.show()
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate XRD patterns from CIF descriptions')
