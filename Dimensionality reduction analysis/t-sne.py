@@ -4,7 +4,7 @@ import pandas as pd
 import os
 
 # 绘制二维散点图，并根据形成能映射颜色
-origin_df=pd.read_csv(r"../data/mp_20_xrd/train.csv_Q_tsne_visualization.csv")
+origin_df=pd.read_csv(r"../data/mp_20_xrd/train_csv_Q_tsne_visualization.csv")
 #根据各种值绘制
 """plt.figure(figsize=(8, 6))
 

@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from sklearn.manifold import TSNE
+
 
 # 假设 origin_df 包含以下列：
 # 'xrd_tsne_1': t-SNE 第一维度
@@ -15,14 +17,26 @@ import pandas as pd
 # })
 
 # 绘制二维散点图，并根据形成能映射颜色
-origin_df=pd.read_csv(r"C:\code\XRD_Visualisation\data\mp_20_xrd\test.csv_Q_tsne_visualization.csv")
+origin_df=pd.read_pickle(r"C:\code\XRD_Visualisation\data\mp_20_xrd_sinc_gau\test_csv_Q_tsne_visualization.csv")
+
+
+
+
+xrd_data = np.vstack(origin_df['xrd'].values)
+tsne = TSNE(n_components=2, random_state=0)
+xrd_tsne = tsne.fit_transform(xrd_data)
+origin_df['tsne_1'] = xrd_tsne[:, 0]
+origin_df['tsne_2'] = xrd_tsne[:, 1]
 plt.figure(figsize=(8, 6))
+
+
+
 
 # 使用形成能作为颜色映射
 scatter = plt.scatter(
-    origin_df['xrd_tsne_1'],
-    origin_df['xrd_tsne_2'],
-    c=origin_df['Si_100_mismatch'],  # 颜色映射到形成能
+    origin_df['tsne_1'],
+    origin_df['tsne_2'],
+    c=origin_df['formation_energy_per_atom'],  # 颜色映射到形成能
     cmap='coolwarm',                  # 使用 coolwarm 色带（蓝色到红色）
     alpha=0.7,                        # 设置透明度
     s=50                               # 设置点的大小

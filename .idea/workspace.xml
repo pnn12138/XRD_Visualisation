@@ -5,210 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bc148de-63ff-478c-b0e4-5e08fe9b5e17" name="更改" comment="完成raw_XRD的t-sne绘制">
-      <change afterPath="$PROJECT_DIR$/Dimensionality reduction analysis/t-sne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xrd_preprocess/xrd_sinc_gau.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/.env.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/Tm4Ni4As4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/carbon_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/gen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/illustrative.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/material3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/material4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/mp_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/opt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/perov_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/recon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/sincVsSmoothed3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/assets/sincVsSmoothed4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/calculate_sinc_only.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/common/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/common/data_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/common/data_utils_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/common/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_data/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_data/datamodule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_data/dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/decoder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/embeddings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/embeddings/atomic_radii.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/embeddings/continuous_embeddings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/embeddings/khot_embeddings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/fit_scaling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/gemnet-dT.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/gemnet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/initializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/atom_update_block.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/base_layers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/basis_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/efficient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/embedding_block.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/interaction_block.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/radial_basis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/scaling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/layers/spherical_basis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gemnet/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/gnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/pl_modules/xrd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/carbon/epoch=2364-step=56759.ckpt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/carbon/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/carbon/lattice_scaler.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/carbon/prop_scaler.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/mp20/epoch=839-step=89039.ckpt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/mp20/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/mp20/lattice_scaler.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/mp20/prop_scaler.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/perovskite/epoch=2664-step=61294.ckpt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/perovskite/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/perovskite/lattice_scaler.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/prop_models/perovskite/prop_scaler.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/cdvae/run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/comprehensive_requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/carbon.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_20.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_20_moka.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_20_pdf.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_20_pdf_normalized.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_20_sinc10.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_20_sinc100.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_cubic.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/mp_trigonal.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/data/perov.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/default.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/logging/default.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/model/decoder/gemnet.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/model/encoder/dimenet.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/model/supervise.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/model/vae.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/optim/alt.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/optim/default.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/conf/train/default.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/carbon_24/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/av5088sup4.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/br1322Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/br1340Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/ck5030Vsup6.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/gw5052Mg2Si_100K_LTsup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/gw5052Mg2Sn_100K_LTsup23.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/iz1026Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/ks5409BTsup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/sh0123Xraysup5.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/sq1033Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/sq3214Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/wh5012phaseIIIsup3.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/wh5012phaseIIsup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/wm2446Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/cif_files/wn6225Isup2.rtv.combined.cif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/av5088sup4.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/br1322Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/br1340Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/ck5030Vsup6.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/gw5052Mg2Si_100K_LTsup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/gw5052Mg2Sn_100K_LTsup23.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/iz1026Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/ks5409BTsup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/sh0123Xraysup5.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/sq1033Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/sq3214Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/wh5012phaseIIIsup3.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/wh5012phaseIIsup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/wm2446Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/experimental_xrd/vis/wn6225Isup2.rtv.combined.cif.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20/train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20/val.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20_oldSplit/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20_oldSplit/no_xrd/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20_oldSplit/no_xrd/train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/mp_20_oldSplit/no_xrd/val.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/old_README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/data/perov_5/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/dummy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/env.cpu.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/env.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/env_sub.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/miscellaneous/read_real_xrd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/original_README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/process_real_xrds/dummy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/process_real_xrds/find_small_materials.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/process_real_xrds/gather_candidates_for_jamie.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/process_real_xrds/plot_rietveld_fits.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/process_real_xrds/process_jamie_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/process_real_xrds/read_real_xrd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/r_coef.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calc_r_value_comparison.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calc_r_value_correlation.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calc_r_value_distribution.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calculate_r_factor_comparison.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calculate_r_factor_post_hoc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calculate_r_value_correlation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calculate_r_value_distribution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/calculate_xrd_patterns_post_hoc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/compute_metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_diffusion_frames.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_experimental.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_experimental_baseline_noOpt.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_jamie_data.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_moka_sinc100.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_moka_sinc100_smartInit.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_random_baseline_experimental.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_random_baseline_sinc10.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_random_baseline_sinc100.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc10.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc100.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc1000.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc100_baseline_noOpt.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc100_noGauss.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc10_baseline_noOpt.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc10_noGauss.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/conditional_generation_sinc50.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/create_data.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/create_moka_data.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/dummy_scripts/plot_xy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/eval_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/evaluate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/evaluate.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/extract_results_by_crystal_system.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/extract_results_by_crystal_system.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/format_mp_pickles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/gather_candidates_for_max.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/gen_xrd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/overlay_xrd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/split_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_mp20_model.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_mp20_model_moka.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_mp20_model_pdf.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_mp20_model_pdf_normalized.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_mp20_model_sinc10.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_mp20_model_sinc100.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_xrd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/scripts/train_xrd_encoder.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/visualization/vis_xrds.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/visualization/visualize_materials.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/visualization/visualize_materials_deprecated.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/xrd_nanoscale_calc/INST_XRY.prm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/xrd_nanoscale_calc/debye_test.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/xrd_nanoscale_calc/gsas_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdvae_xrd/xrd_test.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_xrd.py" beforeDir="false" afterPath="$PROJECT_DIR$/xrd_preprocess/gen_xrd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t-sne.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dimensionality reduction analysis/t-sne.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dimensionality reduction analysis/t-sne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xrd_preprocess/xrd_sinc_gau.py" beforeDir="false" afterPath="$PROJECT_DIR$/xrd_preprocess/xrd_sinc_gau.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xrd_visual/t_sne.py" beforeDir="false" afterPath="$PROJECT_DIR$/xrd_visual/t_sne.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,30 +46,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.PCA.executor": "Run",
-    "Python.data_load.executor": "Run",
-    "Python.data_process.executor": "Run",
-    "Python.gen_xrd.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.t-sne.executor": "Run",
-    "Python.t_sne.executor": "Run",
-    "Python.xrd_sinc_gau.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/code/XRD_Visualisation/Dimensionality reduction analysis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.PCA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_load.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_process.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gen_xrd.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.t-sne.executor&quot;: &quot;Run&quot;,
+    &quot;Python.t_sne.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xrd_sinc_gau.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/code/XRD_Visualisation/Dimensionality reduction analysis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\code\XRD_Visualisation\Dimensionality reduction analysis" />
@@ -278,11 +77,11 @@
       <recent name="C:\code\XRD_Visualisation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\XRD_Visualisation\data\mp_20_xrd_sinc_gau" />
+      <recent name="C:\code\XRD_Visualisation\data\mp_20_xrd" />
       <recent name="C:\code\XRD_Visualisation\Dimensionality reduction analysis" />
       <recent name="C:\code\XRD_Visualisation\xrd_preprocess" />
       <recent name="C:\code\XRD_Visualisation" />
-      <recent name="C:\code\XRD_Visualisation\data\mp_20_xrd" />
-      <recent name="C:\code\XRD_Visualisation\wait" />
     </key>
   </component>
   <component name="RunManager">
@@ -338,7 +137,8 @@
       <workItem from="1749272946389" duration="304000" />
       <workItem from="1749273331267" duration="3001000" />
       <workItem from="1749278467075" duration="992000" />
-      <workItem from="1749291244268" duration="6452000" />
+      <workItem from="1749291244268" duration="7763000" />
+      <workItem from="1749368668317" duration="8444000" />
     </task>
     <task id="LOCAL-00001" summary="完成raw_XRD的t-sne绘制">
       <option name="closed" value="true" />
@@ -372,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749017778179</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成raw_XRD的t-sne绘制">
+      <option name="closed" value="true" />
+      <created>1749297723798</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749297723798</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,8 +217,8 @@
     <SUITE FILE_PATH="coverage/XRD_Visualisation$PCA.coverage" NAME="PCA 覆盖结果" MODIFIED="1749037665313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Dimensionality reduction analysis" />
     <SUITE FILE_PATH="coverage/XRD_Visualisation$main.coverage" NAME="main 覆盖结果" MODIFIED="1748937962106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/XRD_Visualisation$data_load.coverage" NAME="data_load 覆盖结果" MODIFIED="1748938077876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/XRD_Visualisation$t_sne.coverage" NAME="t_sne 覆盖结果" MODIFIED="1749297589263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_visual" />
-    <SUITE FILE_PATH="coverage/XRD_Visualisation$gen_xrd.coverage" NAME="gen_xrd 覆盖结果" MODIFIED="1749016997099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/XRD_Visualisation$xrd_sinc_gau.coverage" NAME="xrd_sinc_gau 覆盖结果" MODIFIED="1749297418640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$t_sne.coverage" NAME="t_sne 覆盖结果" MODIFIED="1749436667983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_visual" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$gen_xrd.coverage" NAME="gen_xrd 覆盖结果" MODIFIED="1749297728324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$xrd_sinc_gau.coverage" NAME="xrd_sinc_gau 覆盖结果" MODIFIED="1749374227081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
   </component>
 </project>

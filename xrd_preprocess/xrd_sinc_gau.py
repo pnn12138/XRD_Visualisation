@@ -21,23 +21,21 @@ def augment_xrdStrip(curr_xrdStrip,sinc_filt, return_both=False, do_not_sinc_gt_
         rawSincFiltered has only sinc filter
     """
 
-    xrd = curr_xrdStrip.numpy()
 
 
-    if do_not_sinc_gt_xrd:  # it comes from experimental data, which is already broadened!
-        sinc_filtered = xrd
-    else:  # this is synthetic data: need to broaden it
-        sinc_filtered = sinc_filter(xrd,sinc_filt)
-    filtered = gaussian_filter(sinc_filtered)
+
+    sinc_filtered = [sinc_filter(xrd,sinc_filt) for xrd in curr_xrdStrip]
+
+    filtered = [gaussian_filter(xrd) for xrd in sinc_filtered]
     sinc_only_presubsample =sinc_filtered
     # presubsamples
     filtered_presubsample = filtered
 
     # postsubsampling
-    filtered_postsubsampled = post_process_filtered_xrd(filtered)
+    filtered_postsubsampled = [post_process_filtered_xrd(xrd) for xrd in filtered]
 
     # postsubsampling
-    sinc_only_postsubsample = post_process_filtered_xrd(sinc_filtered)
+    sinc_only_postsubsample = [post_process_filtered_xrd(xrd) for xrd in sinc_only_presubsample]
 
     return filtered_postsubsampled, sinc_only_postsubsample, filtered_presubsample, sinc_only_presubsample
 
@@ -59,6 +57,7 @@ def sinc_filter(x,sinc_filt):
     return filtered
 
 def gaussian_filter(x):
+
     filtered = gaussian_filter1d(x,
                 sigma=np.random.uniform(
                     low=4096 * (1e-2, 1.1e-2)[0],
@@ -97,27 +96,27 @@ def process_xrd(args):
 
     for file in files:
         df = pd.read_pickle(os.path.join(data_dir,file))
-        xrd_df=df["xrd"]
-        for curr_xrd in tqdm(xrd_df):
-            """list_data = curr_xrd.strip("[]").split()
+        xrd_df=np.array(df["xrd"])
 
-            # 转换为浮点数列表
-            float_list = [float(item) for item in list_data]
+        """list_data = curr_xrd.strip("[]").split()
 
-            # 转换为 numpy 数组
-            curr_xrd = np.array(float_list)"""
-            print(curr_xrd)
-            curr_xrd = curr_xrd.reshape((n_presubsample,))
-            df['rawXRD'] = sample(curr_xrd.numpy()) # need to downsample first
-            # have sinc with gaussian filter & sinc w/out gaussian filter
-            curr_xrd, sinc_only_xrd, curr_xrd_presubsample, sinc_only_xrd_presubsample = augment_xrdStrip(curr_xrd,sinc_filter,return_both=True, do_not_sinc_gt_xrd=False)
-            curr_xrd["xrdd"] = curr_xrd
-            curr_xrd['sincOnly'] = sinc_only_xrd
-            curr_xrd['sincOnlyPresubsample'] = sinc_only_xrd_presubsample
-            curr_xrd['xrdPresubsample'] = curr_xrd_presubsample
+        # 转换为浮点数列表
+        float_list = [float(item) for item in list_data]
 
+        # 转换为 numpy 数组
+        curr_xrd = np.array(float_list)"""
 
+        #curr_xrd = xrd_df.reshape((n_presubsample,))
 
+        rawXRD= [sample(row_xrd) for row_xrd in tqdm(xrd_df)]# need to downsample first
+
+        # have sinc with gaussian filter & sinc w/out gaussian filter
+        curr_xrd, sinc_only_xrd, curr_xrd_presubsample, sinc_only_xrd_presubsample = augment_xrdStrip(rawXRD,sinc_filt,return_both=True, do_not_sinc_gt_xrd=False)
+        df["xrdd"] = curr_xrd
+        df['sincOnly'] = sinc_only_xrd
+        df['sincOnlyPresubsample'] = sinc_only_xrd_presubsample
+        df['xrdPresubsample'] = curr_xrd_presubsample
+        df.to_pickle(os.path.join(args.save_dir,file))
 
 
 
