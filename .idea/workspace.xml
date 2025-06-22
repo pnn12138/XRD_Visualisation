@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bc148de-63ff-478c-b0e4-5e08fe9b5e17" name="更改" comment="完成raw_XRD的t-sne绘制">
+      <change afterPath="$PROJECT_DIR$/xrd_preprocess/xrd_gau.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xrd_visual/xrd_plot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dimensionality reduction analysis/t-sne.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dimensionality reduction analysis/t-sne.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xrd_preprocess/gen_xrd.py" beforeDir="false" afterPath="$PROJECT_DIR$/xrd_preprocess/gen_xrd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xrd_preprocess/xrd_sinc_gau.py" beforeDir="false" afterPath="$PROJECT_DIR$/xrd_preprocess/xrd_sinc_gau.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xrd_visual/t_sne.py" beforeDir="false" afterPath="$PROJECT_DIR$/xrd_visual/t_sne.py" afterDir="false" />
     </list>
@@ -46,32 +48,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.PCA.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_load.executor&quot;: &quot;Run&quot;,
-    &quot;Python.data_process.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gen_xrd.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t-sne.executor&quot;: &quot;Run&quot;,
-    &quot;Python.t_sne.executor&quot;: &quot;Run&quot;,
-    &quot;Python.xrd_sinc_gau.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/code/XRD_Visualisation/Dimensionality reduction analysis&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.PCA.executor": "Run",
+    "Python.data_load.executor": "Run",
+    "Python.data_process.executor": "Run",
+    "Python.gen_xrd.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.t-sne.executor": "Run",
+    "Python.t_getembedding.executor": "Run",
+    "Python.t_sne.executor": "Run",
+    "Python.xrd_gau.executor": "Run",
+    "Python.xrd_plot.executor": "Run",
+    "Python.xrd_sinc_gau.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/code/XRD_Visualisation/xrd_preprocess",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\XRD_Visualisation\xrd_preprocess" />
+      <recent name="C:\code\XRD_Visualisation\xrd_visual" />
       <recent name="C:\code\XRD_Visualisation\Dimensionality reduction analysis" />
       <recent name="C:\code\XRD_Visualisation\data" />
       <recent name="C:\code\XRD_Visualisation" />
@@ -138,7 +145,10 @@
       <workItem from="1749273331267" duration="3001000" />
       <workItem from="1749278467075" duration="992000" />
       <workItem from="1749291244268" duration="7763000" />
-      <workItem from="1749368668317" duration="8444000" />
+      <workItem from="1749368668317" duration="15540000" />
+      <workItem from="1750418004224" duration="2502000" />
+      <workItem from="1750493801679" duration="1173000" />
+      <workItem from="1750497763758" duration="7990000" />
     </task>
     <task id="LOCAL-00001" summary="完成raw_XRD的t-sne绘制">
       <option name="closed" value="true" />
@@ -180,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749297723798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成raw_XRD的t-sne绘制">
+      <option name="closed" value="true" />
+      <created>1749438088585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749438088585</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,12 +231,15 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$xrd_gau.coverage" NAME="xrd_gau 覆盖结果" MODIFIED="1750509583987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
     <SUITE FILE_PATH="coverage/XRD_Visualisation$data_process.coverage" NAME="data_process 覆盖结果" MODIFIED="1749002778018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/XRD_Visualisation$PCA.coverage" NAME="PCA 覆盖结果" MODIFIED="1749037665313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Dimensionality reduction analysis" />
-    <SUITE FILE_PATH="coverage/XRD_Visualisation$main.coverage" NAME="main 覆盖结果" MODIFIED="1748937962106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$t_getembedding.coverage" NAME="t_getembedding 覆盖结果" MODIFIED="1749437972902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/xwechat_files/wxid_b64q24zdxaoa22_036a/msg/file/2025-06" />
     <SUITE FILE_PATH="coverage/XRD_Visualisation$data_load.coverage" NAME="data_load 覆盖结果" MODIFIED="1748938077876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/XRD_Visualisation$t_sne.coverage" NAME="t_sne 覆盖结果" MODIFIED="1749436667983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_visual" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$main.coverage" NAME="main 覆盖结果" MODIFIED="1750493819423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$t_sne.coverage" NAME="t_sne 覆盖结果" MODIFIED="1750493826190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_visual" />
     <SUITE FILE_PATH="coverage/XRD_Visualisation$gen_xrd.coverage" NAME="gen_xrd 覆盖结果" MODIFIED="1749297728324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
-    <SUITE FILE_PATH="coverage/XRD_Visualisation$xrd_sinc_gau.coverage" NAME="xrd_sinc_gau 覆盖结果" MODIFIED="1749374227081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$xrd_plot.coverage" NAME="xrd_plot 覆盖结果" MODIFIED="1750494956159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_visual" />
+    <SUITE FILE_PATH="coverage/XRD_Visualisation$xrd_sinc_gau.coverage" NAME="xrd_sinc_gau 覆盖结果" MODIFIED="1750514900278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xrd_preprocess" />
   </component>
 </project>

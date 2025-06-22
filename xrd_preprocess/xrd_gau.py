@@ -11,28 +11,33 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
-def create_xrd_array(args, pattern):
-    wavelength = WAVELENGTHS[args.wave_source]
+def broaden_xrd_peaks_fixed_length(peak_x, peak_y, total_length=18000, fwhm=0.2, normalize=True):
+    """
+    将离散 XRD 峰拓宽为固定长度的连续曲线（如18000）
 
-    # takes in a pattern (in 2theta space) and converts it to an array in Q space
-    peak_data = np.zeros(args.xrd_vector_dim)  # Q space
-    peak_locations_2_theta = pattern.x.tolist()
-    # convert 2theta to theta
-    peak_locations_theta = [0.5 * theta for theta in peak_locations_2_theta]
-    # convert theta to Q
-    peak_locations_Q = [4 * np.pi * np.sin(np.radians(theta)) / wavelength for theta in peak_locations_theta]
-    peak_values = pattern.y.tolist()
+    参数：
+        peak_x: 峰位置（单位：2θ，单位：度）
+        peak_y: 峰强度
+        total_length: 输出向量长度（如18000）
+        fwhm: 峰拓宽的半高宽（单位：度）
+        normalize: 是否归一化强度
 
-    # convert min and max theta to Q
-    min_Q = 4 * np.pi * np.sin(np.radians(args.min_theta / 2)) / wavelength
-    max_Q = 4 * np.pi * np.sin(np.radians(args.max_theta / 2)) / wavelength
-    for i2 in range(len(peak_locations_Q)):
-        q = peak_locations_Q[i2]
-        height = peak_values[i2] / 100
-        scaled_location = int(args.xrd_vector_dim * (q - min_Q) / (max_Q - min_Q))
-        peak_data[scaled_location] = max(peak_data[scaled_location], height)  # just in case really close
+    返回：
+        x: 二θ角数组（shape: [total_length]）
+        y: 强度数组（shape: [total_length]）
+    """
+    x = np.linspace(0, 180, total_length)
+    y = np.zeros_like(x)
 
-    return peak_data
+    sigma = fwhm / (2 * np.sqrt(2 * np.log(2)))  # 将FWHM转换为标准差
+
+    for px, py in zip(peak_x, peak_y):
+        y += py * np.exp(-(x - px) ** 2 / (2 * sigma ** 2))
+
+    if normalize and y.max() > 0:
+        y /= y.max()
+
+    return x, y
 
 def cif2xrd(args):
     data_dir = args.data_dir
@@ -65,7 +70,7 @@ def cif2xrd(args):
             # Calculate the XRD pattern
             pattern = xrd_calc.get_pattern(structure)
             # Create the XRD tensor
-            xrd_array = create_xrd_array(args, pattern)
+            _,xrd_array = broaden_xrd_peaks_fixed_length(pattern.x.tolist(),pattern.y.tolist())
             xrd_array_list.append(xrd_array)
             lattice_type_list.append(lattice_type)
         origin_df['xrd'] = xrd_array_list
@@ -96,7 +101,7 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         '--save_dir',
-        default = 'C:\code\XRD_Visualisation\data\mp_20_xrd',
+        default = 'C:\code\XRD_Visualisation\data\mp_20_xrd_gau',
         type=str,
         help='path to save XRD patterns'
     )

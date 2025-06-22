@@ -72,7 +72,7 @@ def process_xrd(args):
     files = [f for f in files if f.endswith('.csv')]
     print(f'待处理文件: {len(files)} files')
     #初始化Q空间
-    nanomaterial_size = 50
+    nanomaterial_size = 10
     n_presubsample = 4096
     n_postsubsample = 512
     wavesource = 'CuKa'
@@ -108,7 +108,8 @@ def process_xrd(args):
 
         #curr_xrd = xrd_df.reshape((n_presubsample,))
 
-        rawXRD= [sample(row_xrd) for row_xrd in tqdm(xrd_df)]# need to downsample first
+        df["rawXRD"] = [sample(row_xrd) for row_xrd in tqdm(xrd_df)]  # need to downsample first
+        rawXRD = [row_xrd for row_xrd in tqdm(xrd_df)]# need to downsample first
 
         # have sinc with gaussian filter & sinc w/out gaussian filter
         curr_xrd, sinc_only_xrd, curr_xrd_presubsample, sinc_only_xrd_presubsample = augment_xrdStrip(rawXRD,sinc_filt,return_both=True, do_not_sinc_gt_xrd=False)

@@ -23,28 +23,14 @@ origin_df=pd.read_pickle(r"C:\code\XRD_Visualisation\data\mp_20_xrd_sinc_gau\tes
 
 print(origin_df.columns)
 xrd_data = np.vstack(origin_df['xrdd'].values)
-tsne = TSNE(n_components=2, random_state=0)
-xrd_tsne = tsne.fit_transform(xrd_data)
-origin_df['tsne_1'] = xrd_tsne[:, 0]
-origin_df['tsne_2'] = xrd_tsne[:, 1]
+
 plt.figure(figsize=(8, 6))
 
 
 
 
 # 使用形成能作为颜色映射
-scatter = plt.scatter(
-    origin_df['tsne_1'],
-    origin_df['tsne_2'],
-    c=origin_df['dft_band_gap'],  # 颜色映射到形成能
-    cmap='coolwarm',                  # 使用 coolwarm 色带（蓝色到红色）
-    alpha=0.7,                        # 设置透明度
-    s=50                               # 设置点的大小
-)
-
-# 添加颜色条以显示形成能的范围
-colorbar = plt.colorbar(scatter)
-colorbar.set_label('Formation Energy', fontsize=12)
+plt.plot(xrd_data[1040])
 
 # 图表标题和坐标轴标签
 plt.title('t-SNE Visualization of XRD Data (Colored by Formation Energy)', fontsize=14)
